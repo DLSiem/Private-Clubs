@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+  </head>
+  <body>
+    <div class="ls-container">
+      <h1>Sign up</h1>
+      <form method="POST" action="/signup">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+          class="ls-input"
+          required
+          onchange="this.setCustomValidity('')"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="ls-input"
+          required
+        />
+        <br />
+        <button class="ls-button">Sign up</button>
+      </form>
+
+      <div class="ls-links">
+        <p>Already Sign up?</p>
+        <a href="/login">Log in</a>
+      </div>
+    </div>
+  </body>
+</html>

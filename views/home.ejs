@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Private Club</h3>
+      <% if (user) { %>
+      <div>
+        <span class="ls-nav">
+          <a href="/logout">Logout</a>
+        </span>
+        <span class="lsx-nav">
+          <a href="/clubs">Clubs</a>
+        </span>
+      </div>
+      <% } else { %>
+      <div>
+        <span class="ls-nav">
+          <a href="/login">Login</a>
+        </span>
+        <span class="ls-nav">
+          <a href="/signup">Signup</a>
+        </span>
+      </div>
+      <% } %>
+    </header>
+    <main>
+      <h1>Welcome to Private Clubs</h1>
+    </main>
+
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+  </body>
+</html>
